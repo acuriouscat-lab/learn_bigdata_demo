@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>员工操作</title>
+    <style type="text/css">
+        label{
+            cursor: pointer;
+            display: inline-block;
+            padding: 3px 6px;
+            text-align: right;
+            width: 55px;
+            vertical-align: top;
+        }
+    </style>
+</head>
+<body>
+<form action="/emp" >
+    <fieldset>
+        <legend >单个员工操作</legend>
+        <input type="radio" name="op" value="select">查询
+        <input type="radio" name="op" value="insert">新增
+        <input type="radio" name="op" value="delete">删除
+        <input type="radio" name="op" value="update">更新</br>
+        <label>id:</label><input name="id" value=""> </br>
+        <label>name:</label><input name="lastname" value="">  </br>
+        <label>gender:</label><input name="gender" value="">   </br>
+        <label>email:</label><input name="email" value="">   </br>
+        <input  value="操作" type="submit" >
+    </fieldset>
+
+</form>
+<a href="/getAllEmp">查询所有员工</a>
+</body>
+</html>

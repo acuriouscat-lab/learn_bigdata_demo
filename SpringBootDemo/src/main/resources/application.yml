@@ -1,0 +1,23 @@
+server:
+    port: 8080
+
+mybatis:
+  mapper-locations: classpath*:/mappers/*Mapper.xml
+  configuration:
+    mapUnderscoreToCamelCase: true
+
+
+spring:
+  datasource:
+    dynamic:
+      #dao没有指定访问哪个数据源，指定默认的数据源
+      primary: mybatis
+      #是否是严格模式，严格模式指dao没有指定数据源，就报错。 非严格模式允许dao不配置数据源，会启动默认数据源进行连接
+      strict: false
+      datasource:
+        #定义了数据源，id为mybatis,后续通过id引用
+        mybatis:
+          url: jdbc:mysql://localhost:3306/mybatis?useSSL=false&useUnicode=true&characterEncoding=UTF-8
+          username: root
+          password: "root"
+          driver-class-name: com.mysql.cj.jdbc.Driver
