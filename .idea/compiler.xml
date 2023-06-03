@@ -7,9 +7,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="MybatisDemo" />
         <module name="SpringBootDemo" />
         <module name="ElasticsearchDemo" />
+        <module name="MybatisDemo" />
+        <module name="learn_flink_tutorial" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="11" />

@@ -7,6 +7,7 @@
         <option value="$PROJECT_DIR$/MybatisDemo/pom.xml" />
         <option value="$PROJECT_DIR$/SpringBootDemo/pom.xml" />
         <option value="$PROJECT_DIR$/ElasticsearchDemo/pom.xml" />
+        <option value="$PROJECT_DIR$/learn_flink_tutorial/pom.xml" />
       </list>
     </option>
   </component>
