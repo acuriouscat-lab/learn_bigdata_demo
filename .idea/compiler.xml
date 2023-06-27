@@ -11,8 +11,15 @@
         <module name="ElasticsearchDemo" />
         <module name="MybatisDemo" />
         <module name="learn_flink_tutorial" />
+        <module name="Springboot-learn-demo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="11" />
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="SpringBootDemo" options="-parameters" />
+      <module name="Springboot-learn-demo" options="-parameters" />
+    </option>
   </component>
 </project>
